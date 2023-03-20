@@ -34,6 +34,9 @@ export default function Home() {
                     <label>Price Range </label>
                     <input type="text" value={priceValue} onChange={(event) => setPriceValue(event.target.value)} />
                 </div>
+                <div className="row">
+                    <button>Discover More</button>
+                </div>
             </form>
         </div>
     </Section>
@@ -41,5 +44,57 @@ export default function Home() {
 }
 
 const Section = styled.section`
-
+margin-top: 2rem;
+position: relative;
+.background{
+    img{
+        height: 90vh;
+        width: 100%;
+    }
+}
+.content{
+    .info{
+        position: absolute;
+        top: 5rem;
+        margin-left: 8rem;
+        h1{
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
+    }
+}
+.planner{
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: start;
+    label{
+        font-size: 0.7rem;
+        color: var(--secondary-text);
+    }
+    input,
+    select {
+        border: none;
+        color: var(--primary-color);
+        margin-top: 0.5rem;
+        margin-top: 0.5rem;
+        background-color: white;
+        border-bottom: 1px solid #f5ebe9;
+        padding-bottom: 0.3rem;
+    }
+    }
+    }
+}
 `
