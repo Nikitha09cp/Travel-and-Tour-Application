@@ -15,7 +15,7 @@ export default function Navbar() {
             <img src={logo} alt="logo" />
           </div>
           <div className="toggle"></div>
-          <div className="Links">
+          <div className="links">
             <ul>
             <li> <a href="Services">Services</a> </li>
             <li> <a href="Destinations">Destinations</a> </li>
@@ -46,5 +46,32 @@ export default function Navbar() {
     );
 }
 const Nav = styled.nav`
-
+display: flex;
+justify-content: space-between;
+align-items: center;
+.brand{
+  img{
+    cursor:pointer;
+  }
+}
+.toggle{
+  display: none;
+}
+.links{
+  ul{
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+  li{
+    a{
+    color: black;
+    cursor: pointer;
+    transition: var(--default-transition);
+    &:hover{
+      color: var(--primary-color);
+    }
+    }
+  } 
+  }
+}
 `
