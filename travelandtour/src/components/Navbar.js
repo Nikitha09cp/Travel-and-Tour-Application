@@ -74,4 +74,18 @@ align-items: center;
   } 
   }
 }
+.account-info{
+  display: flex;
+  gap: 2rem;
+  .account{
+    display:flex;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+}
+.search{
+  display:flex;
+  gap: 0.5rem;
+  cursor: pointer;
+}
 `
