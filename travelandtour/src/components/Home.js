@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import styled from "styled-components";
 import hero from '../assets/hero.png';
+import Button from "./Button";
 
 
 export default function Home() {
@@ -14,7 +15,7 @@ export default function Home() {
             <div className="info">
                 <h1>It's Time To</h1>
                 <h1>Explore the world</h1>
-                <button>Plan your Trip</button>
+                <Button text = "Plan your Trip" />
             </div>
         </div>
         <div className="planner">
@@ -35,7 +36,7 @@ export default function Home() {
                     <input type="text" value={priceValue} onChange={(event) => setPriceValue(event.target.value)} />
                 </div>
                 <div className="row">
-                    <button>Discover More</button>
+                    <Button text= "Discover More"/>
                 </div>
             </form>
         </div>
@@ -93,6 +94,14 @@ position: relative;
         background-color: white;
         border-bottom: 1px solid #f5ebe9;
         padding-bottom: 0.3rem;
+    }
+    input: focus{
+        outline: none
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator{
+        cursor: pointer;
+        filter: invert(58%) sepia(69%) saturate(2588%) hue-rotate(325deg) brightness(105%) contrast(101%);
+
     }
     }
     }
