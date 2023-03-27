@@ -48,7 +48,7 @@ gap: 1rem;
     gap: 1rem;
     text-align: center;
     h3{
-        color: var(--primary-text);
+        color: black;
     }
     p{
         color: var(--secondary-text);
@@ -57,6 +57,11 @@ gap: 1rem;
         height: 128px;
         width: 128px;
     }
+    transition: var(--default-transition);
+        &:hover {
+            background-color: white;  
+            box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+        }
 }
 .service2{
     background-color: var(--card-grey);
@@ -69,7 +74,7 @@ gap: 1rem;
     gap: 1rem;
     text-align: center;
     h3{
-        color: var(--primary-text);
+        color: black;
     }
     p{
         color: var(--secondary-text);
@@ -78,6 +83,11 @@ gap: 1rem;
         height: 128px;
         width: 128px;
     }
+    transition: var(--default-transition);
+        &:hover {
+            background-color: white;  
+            box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+        }
 }
 .service3{
         background-color: var(--card-grey);
@@ -90,7 +100,7 @@ gap: 1rem;
         gap: 1rem;
         text-align: center;
         h3{
-            color: var(--primary-text);
+            color: black;
         }
         p{
             color: var(--secondary-text);
@@ -98,6 +108,11 @@ gap: 1rem;
         img{
             height: 128px;
             width: 128px;
+        }
+        transition: var(--default-transition);
+        &:hover {
+            background-color: white;  
+            box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
         }
 }
 .service4{
@@ -111,7 +126,7 @@ gap: 1rem;
         cursor: pointer;
         gap: 1rem;
         h3{
-            color: var(--primary-text);
+            color: black;
         }
         p{
             color: var(--secondary-text);
@@ -119,6 +134,11 @@ gap: 1rem;
         img{
             height: 128px;
             width: 128px;
+        }
+        transition: var(--default-transition);
+        &:hover {
+            background-color: white;  
+            box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
         }
 }
 }
